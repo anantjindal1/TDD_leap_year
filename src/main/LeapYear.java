@@ -5,7 +5,7 @@ public class LeapYear {
   }
 
   public boolean isLeap(int year) {
-		boolean result = isMultipleOf(year,400);
+		boolean result = isMultipleOf(year,400)||(!isMultipleOf(year,100)&&isMultipleOf(year,4));
 		return result;
 	}
 
